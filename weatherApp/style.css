@@ -60,3 +60,12 @@ sup{
     color: #1e2432;
     text-align: center;
 }
+
+.temp_feel_like{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #1e2432;
+    text-align: center;
+}
