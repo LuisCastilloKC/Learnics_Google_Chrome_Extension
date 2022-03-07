@@ -4,6 +4,15 @@ const stateInput = document.querySelector(".state")
 const countryCode = "us"
 const weatherForm = document.querySelector("#weatherForm")
 
+weatherForm.addEventListener("submit", (e)=>{
+    e.preventDefault()
+    const city = cityInput.value
+    const state = stateInput.value
+    console.log(city, state)
+    cityInput.value = ""
+    stateInput.value = ""
+})
+
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput},${stateInput},${countryCode}&appid=${API_key}&units=imperial`)
 .then((resp)=> resp.json())
 .then((data)=> {
