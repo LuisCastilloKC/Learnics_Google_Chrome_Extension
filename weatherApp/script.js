@@ -9,26 +9,30 @@ weatherForm.addEventListener("submit", (e)=>{
     const city = cityInput.value
     const state = stateInput.value
     console.log(city, state)
+    this.fetching(city, state)
     cityInput.value = ""
     stateInput.value = ""
 })
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput},${stateInput},${countryCode}&appid=${API_key}&units=imperial`)
-.then((resp)=> resp.json())
-.then((data)=> {
-    console.log(data)
 
-fetch(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
-.then((response)=> response.blob())
-.then((result)=>{ 
+function fetching(city, state){ 
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${countryCode}&appid=${API_key}&units=imperial`)
+    .then((resp)=> resp.json())
+    .then((data)=> {
+        console.log(data)
 
-        document.getElementById("text_location").innerHTML = data.name
-        document.getElementById("text_location_country").innerHTML = data.sys.country
-        document.getElementById("text_temp").innerHTML = Math.round(data.main.temp)
-        document.getElementById("text_feelslike").innerHTML = Math.round(data.main.feels_like)
-        document.getElementById("text_desc").innerHTML = data.weather[0].description
+    fetch(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+    .then((response)=> response.blob())
+    .then((result)=>{ 
 
-        const iconImageObjURL = URL.createObjectURL(result);
-        document.getElementById("icon").src = iconImageObjURL
+            document.getElementById("text_location").innerHTML = data.name
+            document.getElementById("text_location_country").innerHTML = data.sys.country
+            document.getElementById("text_temp").innerHTML = Math.round(data.main.temp)
+            document.getElementById("text_feelslike").innerHTML = Math.round(data.main.feels_like)
+            document.getElementById("text_desc").innerHTML = data.weather[0].description
+
+            const iconImageObjURL = URL.createObjectURL(result);
+            document.getElementById("icon").src = iconImageObjURL
+        })
     })
-})
+}
