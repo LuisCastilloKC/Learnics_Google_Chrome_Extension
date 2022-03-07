@@ -26,3 +26,11 @@ p{
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
+.country{
+    font-size: 0.6em;
+}
+
+sup{
+    font-size: 0.4em;
+}
