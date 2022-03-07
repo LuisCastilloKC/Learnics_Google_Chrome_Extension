@@ -16,5 +16,8 @@ let alarmClock = {
         let alarmOff = document.getElementById('alarmOff');
         alarmOff.addEventListener('click',  alarmClock.offHandler );
     }
-
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    alarmClock.setup();
+});
