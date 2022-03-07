@@ -1,0 +1,6 @@
+{
+    "name": "Weather App",
+    "description": "A weather App to get current temperature with City and State from USA",
+    "version": "1.0",
+    "manifest_version": 2
+}
