@@ -12,5 +12,9 @@
         "48": "./weatherApp/icon_images/icon_48.png",
         "128": "./weatherApp/icon_images/icon_128.png"
     },
-    "permissions": ["activeTab"]
+    "background":{
+        "scripts": ["./alertTimer/backgroundAlarm.js"],
+        "persistent": false
+    },
+    "permissions": ["activeTab", "alarms"]
 }
