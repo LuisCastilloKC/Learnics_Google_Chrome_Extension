@@ -69,3 +69,8 @@ sup{
     color: #1e2432;
     text-align: center;
 }
+
+#text_feelslike{
+    padding-left: 5px;
+    font-weight: bold;
+}
