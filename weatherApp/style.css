@@ -42,6 +42,14 @@ sup{
     font-weight: bold;
 }
 
+.location span{
+    font-size: 1.7em;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
 .location sup{
     height: 1.2em;
     padding: 0.2em 0.6em;
