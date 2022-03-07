@@ -50,3 +50,13 @@ sup{
     color: #fff;
     background: #00c3ff;
 }
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1e2432;
+    text-align: center;
+}
