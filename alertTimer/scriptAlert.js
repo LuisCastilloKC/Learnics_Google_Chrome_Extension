@@ -1,7 +1,7 @@
 let alarmClock = {
 
     onHandler : function() {
-        chrome.alarms.create("myAlarm", {delayInMinutes: 0.1, periodInMinutes: 0.2} );
+        chrome.alarms.create("myAlarm", {delayInMinutes: 1.0, periodInMinutes: 2.0} );
                 window.close();
     },
 
