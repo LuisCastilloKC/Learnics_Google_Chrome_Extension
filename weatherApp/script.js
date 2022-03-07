@@ -6,6 +6,14 @@ const weatherForm = document.querySelector("#weatherForm")
 const inputText = document.getElementById("handleEnter")
 const formBtn = document.querySelector(".submitBtnForm")
 
+inputText.addEventListener("keyup", (e)=>{
+    e.preventDefault()
+    if(e.keyCode === 13){
+        console.log("Enter Key is working")
+        formBtn.click()
+    }
+})
+
 weatherForm.addEventListener("submit", (e)=>{
     e.preventDefault()
     const city = cityInput.value
