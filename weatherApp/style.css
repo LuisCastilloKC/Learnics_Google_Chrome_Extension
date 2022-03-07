@@ -114,3 +114,8 @@ input{
     text-align: center;
     width: 100%;
 }
+
+.submitBtnForm:hover{  
+    background-color: #46be28;
+    transition: all 0.3s ease;
+}
