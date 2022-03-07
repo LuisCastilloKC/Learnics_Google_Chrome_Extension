@@ -18,5 +18,8 @@ fetch(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         document.getElementById("text_temp").innerHTML = Math.round(data.main.temp)
         document.getElementById("text_feelslike").innerHTML = Math.round(data.main.feels_like)
         document.getElementById("text_desc").innerHTML = data.weather[0].description
+
+        const iconImageObjURL = URL.createObjectURL(result);
+        document.getElementById("icon").src = iconImageObjURL
     })
 })
