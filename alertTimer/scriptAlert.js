@@ -8,6 +8,13 @@ let alarmClock = {
     offHandler : function() {
         chrome.alarms.clear("myAlarm");
                 window.close();
+    },
+
+    setup: function() {
+        let alarmOn = document.getElementById('alarmOn');
+        alarmOn.addEventListener('click',  alarmClock.onHandler );
+        let alarmOff = document.getElementById('alarmOff');
+        alarmOff.addEventListener('click',  alarmClock.offHandler );
     }
 
 }
