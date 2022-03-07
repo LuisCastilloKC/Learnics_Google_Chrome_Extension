@@ -3,6 +3,8 @@ const cityInput = document.querySelector(".city")
 const stateInput = document.querySelector(".state")
 const countryCode = "us"
 const weatherForm = document.querySelector("#weatherForm")
+const inputText = document.getElementById("handleEnter")
+const formBtn = document.querySelector(".submitBtnForm")
 
 weatherForm.addEventListener("submit", (e)=>{
     e.preventDefault()
