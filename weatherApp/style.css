@@ -178,3 +178,9 @@ input{
     background-color: #df2808;
     transition: all 0.3s ease;
 }
+
+.alarmText{
+    font-size: 15px;
+    text-transform: lowercase;
+    margin: 25px;
+}
