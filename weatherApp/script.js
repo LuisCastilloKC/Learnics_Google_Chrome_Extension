@@ -6,6 +6,7 @@ const weatherForm = document.querySelector("#weatherForm")
 const inputText = document.getElementById("handleEnter")
 const formBtn = document.querySelector(".submitBtnForm")
 
+// Enter Key Press function
 inputText.addEventListener("keyup", (e)=>{
     e.preventDefault()
     if(e.keyCode === 13){
@@ -13,7 +14,7 @@ inputText.addEventListener("keyup", (e)=>{
         formBtn.click()
     }
 })
-
+// When button Get Weather is Click
 weatherForm.addEventListener("submit", (e)=>{
     e.preventDefault()
     const city = cityInput.value
@@ -24,7 +25,7 @@ weatherForm.addEventListener("submit", (e)=>{
     stateInput.value = ""
 })
 
-
+// In charge to accept Data from the Form input and pass to the API
 function fetching(city, state){ 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${countryCode}&appid=${API_key}&units=imperial`)
     .then((resp)=> resp.json())
