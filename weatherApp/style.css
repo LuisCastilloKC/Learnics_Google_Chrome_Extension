@@ -34,3 +34,10 @@ p{
 sup{
     font-size: 0.4em;
 }
+
+.location{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: bold;
+}
