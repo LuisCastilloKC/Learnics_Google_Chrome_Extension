@@ -74,3 +74,14 @@ sup{
     padding-left: 5px;
     font-weight: bold;
 }
+
+input{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    height: 40px;
+    padding: 30px 5px 0px;
+    border-bottom: 1px solid;
+}
