@@ -119,3 +119,12 @@ input{
     background-color: #46be28;
     transition: all 0.3s ease;
 }
+
+
+/* alarm Style START FROM HERE */
+
+.alarmContainer{
+    display: flex;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
