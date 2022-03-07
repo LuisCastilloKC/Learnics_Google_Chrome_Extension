@@ -85,3 +85,16 @@ input{
     padding: 30px 5px 0px;
     border-bottom: 1px solid;
 }
+
+::placeholder { 
+    color: rgb(176, 177, 184);
+    opacity: 1; 
+}
+  
+::-ms-input-placeholder { 
+    color: rgb(176, 177, 184);
+}
+  
+::-ms-input-placeholder {
+    color: rgb(176, 177, 184);
+}
