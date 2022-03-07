@@ -1,6 +1,6 @@
 {
-    "name": "Weather App",
-    "description": "A weather App to get current temperature with City and State from USA",
+    "name": "Weather App / Alarm Timer",
+    "description": "A weather App to get current temperature with City and State from USA plus Alaram Timer",
     "version": "1.0",
     "manifest_version": 2,
     "browser_action": {
